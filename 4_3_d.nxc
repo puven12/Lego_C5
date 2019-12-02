@@ -1,0 +1,8 @@
+task main() {
+int y /= 8
+// IR Seeker is connected to Port 1
+	while(true) {
+		string display = SensorHTIRSeekerDir(S1);
+		TextOut(x, y, display);
+	}
+}

@@ -1,0 +1,4 @@
+task main() {
+#DEFINE OUT_BC GO // Motor connected to output B and C
+OnFwd(GO, 100);
+}
