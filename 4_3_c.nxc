@@ -1,4 +1,6 @@
-task main() {
-#DEFINE OUT_BC GO // Motor connected to output B and C
-OnFwd(GO, 100);
+task main(){
+// Connect Main Motor to Port B and C
+OnFwd(OUT_BC, 100);
+Wait(2000);
+OnRev(OUT_BC, 100);
 }

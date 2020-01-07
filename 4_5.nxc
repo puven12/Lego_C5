@@ -1,0 +1,12 @@
+task main () {
+int dir, s1, s3, s5, s7 ,s9; // Function args
+int dev, target, curve; // dev multiply by 25 to get -127 to 127 range
+SetSensorLowspeed(S1); // IRSeeker i2c init
+	 while(true) {
+					dev = dir - target;
+					curve = dev * 25;
+					ReadSensorHTIRSeeker2AC(IN_1, dir, s1, s3, s5,s7,s9);
+          OnFwd(OUT_A,75);
+					OnFwdSync(OUT_BC, 100, curve);
+	 }
+}
